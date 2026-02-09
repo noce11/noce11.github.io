@@ -15,11 +15,11 @@
         }
 
         h1 {
-            font-size: 50;
+            font-size: 150;
         }
 
         .timer {
-            font-size: 50;
+            font-size: 100;
             margin: auto;
         }
 
@@ -49,7 +49,8 @@
 
     <script>
         src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"
-        const fineConteggio = new Date("Feb 20, 2026 00:00:00").getTime();
+
+        const fineConteggio = new Date().getTime() + 10000;
 
         const x = setInterval(function () {
 
@@ -69,7 +70,7 @@
                 clearInterval(x);
 
             document.getElementById("testo").innerHTML = "AUGURI AMOREEEE";
-                document.getElementById("timer").innerHTML = "TEMPO SCADUTO";
+                document.getElementById("timer").innerHTML = "+1 ANNO DI NOIIII";
                 document.getElementById("immagine").src = "https://media.tenor.com/HSxxt1scQXYAAAAM/cat-hugs.gif";
                 confetti({
                     particleCount: 350,
